@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 const UseStateTugas = () => {
@@ -40,94 +39,93 @@ Total : ${total}`);
       <h1 className="text-center">Form Pembelian Laptop</h1>
       <form onSubmit={handleSubmit} className="card-header">
         <div className="form-group">
-            <label>Nama Pelanggan</label>
-            <input
-                type="text"
-                className="form-control"
-                placeholder="Masukkan Nama"
-                value={nama}
-                onChange={(e) => setNama(e.target.value)}
-            />
+          <label>Nama Pelanggan</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Masukkan Nama"
+            value={nama}
+            onChange={(e) => setNama(e.target.value)}
+          />
         </div>
         <div className="form-group">
-            <label>Alamat</label>
-            <input
-                type="text"
-                className="form-control"
-                placeholder="Masukkan Alamat"
-                value={alamat}
-                onChange={(e) => setAlamat(e.target.value)}
-            />
+          <label>Alamat</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Masukkan Alamat"
+            value={alamat}
+            onChange={(e) => setAlamat(e.target.value)}
+          />
         </div>
         <div className="form-group">
-            <label>Nomor Telepon</label>
-            <input
-                type="text"
-                className="form-control"
-                placeholder="Masukkan Nomor Telepon"
-                value={nomor}
-                onChange={(e) => setNomor(e.target.value)}
-            />
+          <label>Nomor Telepon</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Masukkan Nomor Telepon"
+            value={nomor}
+            onChange={(e) => setNomor(e.target.value)}
+          />
         </div>
         <div className="form-group">
-            <label>Pesanan</label>
-            <select
-                className="form-control"
-                value={pesanan}
-                onChange={(e) => setPesanan(e.target.value)}
-            >
-                <option value="">Pilih Pesanan</option>
-                <option value="laptop">Laptop</option>
-                <option value="smartphone">Smartphone</option>
-                <option value="smartwatch">Smartwatch</option>
-                <option value="headphone">Headphone</option>
-            </select>
+          <label>Pesanan</label>
+          <select
+            className="form-control"
+            value={pesanan}
+            onChange={(e) => setPesanan(e.target.value)}
+          >
+            <option value="">Pilih Pesanan</option>
+            <option value="laptop">Laptop</option>
+            <option value="smartphone">Smartphone</option>
+            <option value="smartwatch">Smartwatch</option>
+            <option value="headphone">Headphone</option>
+          </select>
         </div>
         <div className="form-group">
-            <label>Jumlah</label>
-            <input
-                type="number"
-                className="form-control"
-                placeholder="Masukkan Jumlah"
-                value={jumlah}
-                onChange={(e) => setJumlah(e.target.value)}
-            />
+          <label>Jumlah</label>
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Masukkan Jumlah"
+            value={jumlah}
+            onChange={(e) => setJumlah(e.target.value)}
+          />
         </div>
         <button type="submit" className="btn btn-primary mt-1">
-            Submit
+          Submit
         </button>
       </form>
       <h1 className="text-center mt-3">Hasil Pembelian</h1>
-        <table className="table table-bordered">    
-            <tbody>
-                <tr>
-                    <td>Nama Pelanggan</td>
-                    <td>{nama}</td>
-                </tr>
-                <tr>
-                    <td>Alamat</td>
-                    <td>{alamat}</td>
-                </tr>
-                <tr>
-                    <td>Nomor Telepon</td>
-                    <td>{nomor}</td>
-                </tr>
-                <tr>
-                    <td>Pesanan</td>
-                    <td>{pesanan}</td>
-                </tr>
+      <table className="table table-bordered">
+        <tbody>
+          <tr>
+            <td>Nama Pelanggan</td>
+            <td>{nama}</td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>{alamat}</td>
+          </tr>
+          <tr>
+            <td>Nomor Telepon</td>
+            <td>{nomor}</td>
+          </tr>
+          <tr>
+            <td>Pesanan</td>
+            <td>{pesanan}</td>
+          </tr>
 
-                <tr>
-                    <td>Jumlah</td>
-                    <td>{jumlah} Unit</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>Rp.{total}</td>
-                </tr>
-            </tbody>
-        </table>
-
+          <tr>
+            <td>Jumlah</td>
+            <td>{jumlah} Unit</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>Rp.{total}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
